@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="full-img" id="fullImgBox">
+            <img src="" id="fullImg"> 
+        <span onclick="closeFullImg()"> X </span>
+        </div>
+     <div class ="img-gallery">
+    
+    <img src="C:\Users\Kashish\Desktop\img gallery\1550331048043.jpg" onclick="openFullImg(this.src)">
+    <img src="C:\Users\Kashish\Desktop\img gallery\1550331042215.jpg" onclick="openFullImg(this.src)">
+    <img src="C:\Users\Kashish\Desktop\img gallery\1550331042102.jpg" onclick="openFullImg(this.src)">
+    <img src="C:\Users\Kashish\Desktop\img gallery\1G7A3303.JPG" onclick="openFullImg(this.src)">
+    <img src= "C:\Users\Kashish\Desktop\img gallery\1G7A3293.JPG"onclick="openFullImg(this.src)">
+    <img src="C:\Users\Kashish\Desktop\img gallery\1G7A3287.JPG" onclick="openFullImg(this.src)">
+    <img src="C:\Users\Kashish\Desktop\img gallery\1G7A3290.JPG" onclick="openFullImg(this.src)">
+    <img src="C:\Users\Kashish\Desktop\img gallery\1G7A3283.JPG" onclick="openFullImg(this.src)">
+    <img src="C:\Users\Kashish\Desktop\img gallery\1G7A3279.JPG" onclick="openFullImg(this.src)">
+    <img src="C:\Users\Kashish\Desktop\img gallery\1G7A3272.JPG" onclick="openFullImg(this.src)">
+    <img src="C:\Users\Kashish\Desktop\img gallery\IMG_20200123_135750.jpg" onclick="openFullImg(this.src)">
+    <img src="c:\Users\Kashish\Desktop\img gallery\1G7A3264.JPG" onclick="openFullImg(this.src)">
+    <img src="C:\Users\Kashish\Desktop\img gallery\1G7A3263.JPG" onclick="openFullImg(this.src)"> 
+    <img src="C:\Users\Kashish\Desktop\img gallery\Screenshot_2021-03-16-08-35-09-879_com.google.android.apps.photos.jpg" onclick="openFullImg(this.src)">
+</div>  
+     <script>
+var fullImgBox = document.getElementById("fullImgBox");
+var fullImg = document.getElementById("fullImg");
+
+function openFullImg(pic){
+    fullImgBox.style.display="flex";
+    fullImg.src=pic;
+}
+function closeFullImg(){
+    fullImgBox.style.display="none";
+}
+     </script> 
+    </body>
+</html>
